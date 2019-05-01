@@ -178,8 +178,7 @@ body {
 
 footer {
     background-color: #EEE;
-    height: 500px;
-    padding: 10px;
+    padding: 20px;
 }
 
 footer div {
@@ -194,7 +193,58 @@ footer div p {
 
 footer div hr {color: #EEE;}
 
-.grid3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+.grid3 {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid3 section{
+    flex: 25%;
+    max-width: 25%;
+}
+
+.grid3 section h5 {
+    position: relative;
+    left: 39px;
+}
+
+.grid3 section ul li a, 
+.grid4 section ul li a {
+    color: #666;
+    font-size: 12px;
+}
+
+.grid3 section ul li a:hover,
+.grid4 section ul li a:hover {
+    color: #444;
+    text-decoration: underline;
+}
+
+.grid4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid4 section h5 {font-weight: 550;}
+
+.grid4 section .header{color: #444;}
+.grid4 section .header:hover{color: #222;}
+
+.grid4 section ul{display: none;}
+
+@media screen and (max-width: 900px){
+    .grid3 {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .grid4 {
+        display: none !important;
+    }
+}
+
+.finalNotes {
+    text-align: center;
 }
