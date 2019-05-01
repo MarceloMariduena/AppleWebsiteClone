@@ -27,9 +27,9 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 11px 36px;
+    padding: 12px 3vw;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     transition: 0.3s;
 }
 .navbar a:hover {
@@ -38,7 +38,27 @@ body {
 }
 
 .navbar a img {
-    width: 15px;
+    width: 16px;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar a:not(.icons) {display: none;}
+    .navbar a.icons {
+      display: block;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+}
+  
+@media screen and (max-width: 900px) {
+    .navbar.responsive a {
+        flex-direction: column;
+    }
 }
 
 .grid {
