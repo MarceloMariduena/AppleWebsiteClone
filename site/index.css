@@ -88,13 +88,17 @@ body {
 
 .grid section h1 {font-size: 40px;}
 .grid section h1 span {
-    padding: 2px 5px;
+    position: relative;
+    top: -5px;
+    left: -3px;
+    padding: 1px 4px;
     font-size: 21px;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
-.grid section p {font-size: 23px;}
+.grid section p {font-size: 21px;}
+.grid section p a {color: rgb(0, 125, 167);}
 
 .grid section img {
     max-height: 500px;
