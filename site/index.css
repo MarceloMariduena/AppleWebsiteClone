@@ -11,6 +11,7 @@ body {
 }
 
 .navbar {
+    z-index: 99;
     overflow: hidden;
     background-color: #222;
     opacity: 0.95;
@@ -51,6 +52,7 @@ body {
     top: 48px;
     bottom: 0;
     display: none;
+    z-index: 98;
 }
 
 #slideMenu a {
