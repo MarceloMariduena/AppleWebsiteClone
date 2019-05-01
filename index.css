@@ -12,7 +12,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #111;
+    background-color: #222;
     opacity: 0.95;
     position: fixed;
     top: 0;
@@ -44,19 +44,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 900px) {
-    .navbar a:not(.icons) {display: none;}
-    .navbar a.icons {
-      display: block;
-      font-size: 18px;
-    }
-    .navbar {
-        justify-content: space-between;
-    }
-}
-
 #slideMenu {
-    background-color: #111;
     opacity: 0.95;
     width: 100%;
     position: fixed;
@@ -67,12 +55,39 @@ body {
 
 #slideMenu a {
     display: block;
+    width: 80%;
+    margin: auto;
     color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
+    padding: 5px;
     text-decoration: none;
     font-size: 16px;
     transition: 0.3s;
+}
+
+#slideMenu hr {
+    width: 80%;
+    color: #333;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar a:not(.icons) {display: none;}
+    .navbar a.icons {
+      display: block;
+      font-size: 18px;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    #slideMenu, .navbar {
+        background-color: #111;
+        opacity: 0.99;
+    }
+}
+
+@media screen and (min-width: 900px){
+    #slideMenu {
+        display: none !important;
+    }
 }
 
 .grid {
@@ -86,7 +101,11 @@ body {
     text-align: center;
 }
 
-.grid section h1 {font-size: 40px;}
+.grid section h1 {
+    font-size: 40px;
+    position: relative;
+    top: 21px;
+}
 .grid section h1 span {
     position: relative;
     top: -5px;
@@ -96,8 +115,28 @@ body {
     border: 3px solid black;
     border-radius: 6px;
 }
+.series {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: red;
+    position: relative;
+    top: 4px;
+}
 
-.grid section p {font-size: 21px;}
+.grid section p {
+    font-size: 21px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 800px){
+    .grid section p {
+        font-size: 18px;
+        transition: 0.3s;
+    }
+}
+
 .grid section p a {color: rgb(0, 125, 167);}
 
 .grid section img {
