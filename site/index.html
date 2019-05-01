@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="index.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="icon" type="image/ico" href="AppleLogo4.png" />
 <title> Apple Clone</title>
 </head>
@@ -12,7 +12,7 @@
 <body>
 
 <nav class="navbar" id="navbar">
-  <a href="javascript:void(0);" class="icon icons" onclick="myFunction()">
+  <a id="bars" href="javascript:void(0);" class="icon icons">
     <i class="fa fa-bars"></i>
   </a>
   <a href="#" class="icons" onclick="return false;"><img src="AppleLogo3.png"/></a>
@@ -25,6 +25,15 @@
   <a href="#" onclick="return false;">Support</a>
   <a href="#" onclick="return false;"><i class="fa fa-search" aria-hidden="true"></i></a>
   <a href="#" class="icons" onclick="return false;"><img src="ShoppingBag.png" /></a>
+</nav>
+<nav id="slideMenu">
+  <a href="#" onclick="return false;">Mac</a>
+  <a href="#" onclick="return false;">iPad</a>
+  <a href="#" onclick="return false;">iPhone</a>
+  <a href="#" onclick="return false;">Watch</a>
+  <a href="#" onclick="return false;">TV</a>
+  <a href="#" onclick="return false;">Music</a>
+  <a href="#" onclick="return false;">Support</a>
 </nav>
 
 <div class="grid">
@@ -133,13 +142,11 @@
 </footer>
 
 <script>
-  function myFunction() {
-    let x = document.getElementById("navbar");
-    if (x.className === "navbar")
-      x.className += " responsive";
-    else 
-      x.className = "navbar";
-  }
+  $(document).ready(function(){
+    $("#bars").click(function(){
+      $("#slideMenu").slideToggle(500);
+    });
+  });
 </script>
 
 </body>

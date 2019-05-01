@@ -12,8 +12,8 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
-    opacity: 0.985;
+    background-color: #111;
+    opacity: 0.95;
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,16 +23,15 @@ body {
 }
 
 .navbar a {
-    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 12px 3vw;
+    padding: 12px 2.1vw;
     text-decoration: none;
     font-size: 15px;
     transition: 0.3s;
 }
-.navbar a:hover {
+.navbar a:hover, #slideMenu a:hover {
     color: #BBB;
     transition: 0.3s;
 }
@@ -49,19 +48,31 @@ body {
     .navbar a:not(.icons) {display: none;}
     .navbar a.icons {
       display: block;
+      font-size: 18px;
     }
     .navbar {
         justify-content: space-between;
     }
 }
-  
-@media screen and (max-width: 900px) {
-    .navbar.responsive a {
-        display: block;
-    }
-    .navbar.responsive{
-        flex-direction: column;
-    }
+
+#slideMenu {
+    background-color: #111;
+    opacity: 0.95;
+    width: 100%;
+    position: fixed;
+    top: 48px;
+    bottom: 0;
+    display: none;
+}
+
+#slideMenu a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 .grid {
@@ -77,10 +88,10 @@ body {
 
 .grid section h1 {font-size: 40px;}
 .grid section h1 span {
-    padding: 3px 6px;
-    border-radius: 5px;
-    font-size: 24px;
+    padding: 2px 5px;
+    font-size: 21px;
     border: 3px solid black;
+    border-radius: 5px;
 }
 
 .grid section p {font-size: 23px;}
