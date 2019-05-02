@@ -227,6 +227,7 @@ footer div hr {color: #EEE;}
 }
 
 .grid4 section h5 {font-weight: 550;}
+.grid4 section h5 span {float: right;}
 
 .grid4 section .header{color: #444;}
 .grid4 section .header:hover{color: #222;}
