@@ -7,7 +7,7 @@
   },
   "author": "Marcelo Mariduena",
   "license": "ISC",
-  "homepage": "https://github.com/MarceloMariduena/AppleWebsiteClone",
+  "homepage": "https://github.com/MarceloMariduena/AppleWebsiteLook-alike",
   "description": "A font-end web dev project to clone a popular website",
   "dependencies": {
     "gh-pages": "^2.0.1"
